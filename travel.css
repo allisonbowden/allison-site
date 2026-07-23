@@ -1,0 +1,176 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  padding: 90px 6vw 100px;
+}
+
+.back {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back:hover { text-decoration: underline; }
+
+header {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #2e1308;
+  margin-bottom: 14px;
+}
+
+.intro {
+  font-family: "Cutive Mono", monospace;
+  font-size: 17px;
+  color: #2e1308;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---- boarding pass ticket ---- */
+.ticket {
+  width: 260px;
+  border-radius: 10px;
+  padding: 16px 18px 14px;
+  color: #f5f1e8;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.airline {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.2;
+}
+
+.meta .k {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.meta .v {
+  font-size: 10px;
+}
+
+.ticket-cities {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.ticket-codes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.ticket-codes .code {
+  font-family: "Cutive Mono", monospace;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.ticket-codes .plane {
+  font-size: 14px;
+  opacity: 0.85;
+  transform: rotate(90deg);
+}
+
+.ticket-details {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(245, 241, 232, 0.4);
+  margin-bottom: 10px;
+}
+
+.ticket-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ticket-details .k {
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.ticket-details .v {
+  font-size: 10px;
+}
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ticket-footer .k {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.65;
+  display: block;
+}
+
+.ticket-footer .v {
+  font-size: 12px;
+  display: block;
+}
+
+.ticket-footer .fare {
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  body { padding: 80px 5vw 60px; }
+  .grid { gap: 22px; }
+  .ticket { width: min(280px, 82vw); }
+}

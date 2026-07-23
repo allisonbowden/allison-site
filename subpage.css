@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: "Cutive Mono", "Courier New", monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.back {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  font-size: 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.linkedin {
+  margin-top: 6px;
+  font-family: "Inter", "Cutive Mono", sans-serif;
+  font-size: 0.95rem;
+  color: #2e1308;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

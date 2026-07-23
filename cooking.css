@@ -1,0 +1,161 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  padding: 90px 6vw 100px;
+}
+
+.back {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back:hover { text-decoration: underline; }
+
+.recipe {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c65a4f;
+  margin-bottom: 14px;
+}
+
+header h1 {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3.2vw, 1.7rem);
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.adapted {
+  font-size: 13px;
+  color: rgba(46, 19, 8, 0.6);
+  margin-bottom: 18px;
+}
+
+.adapted a {
+  color: #c65a4f;
+  text-decoration: none;
+}
+
+.adapted a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(46, 19, 8, 0.75);
+  margin-bottom: 24px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.stats .k {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(46, 19, 8, 0.5);
+}
+
+.stats .v {
+  font-family: "Cutive Mono", monospace;
+  font-size: 16px;
+}
+
+section {
+  margin-bottom: 44px;
+}
+
+section h2 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(46, 19, 8, 0.12);
+}
+
+section h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #c9a35a;
+  margin: 20px 0 10px;
+}
+
+section h3:first-of-type {
+  margin-top: 0;
+}
+
+ul, ol {
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(46, 19, 8, 0.85);
+}
+
+ul.plain {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.plain li {
+  margin-bottom: 8px;
+}
+
+ol li {
+  margin-bottom: 14px;
+}
+
+ol li em {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: rgba(46, 19, 8, 0.6);
+}
+
+.nutrition-note {
+  font-size: 13px;
+  color: rgba(46, 19, 8, 0.55);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  body { padding: 80px 5vw 60px; }
+  .stats { gap: 18px; }
+}

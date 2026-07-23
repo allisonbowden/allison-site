@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Cutive Mono", "Courier New", monospace;
+  overflow: hidden;
+}
+
+.desk {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 600px;
+}
+
+/* ---- center greeting ---- */
+.greeting {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.greeting .heart {
+  display: inline-block;
+  transform: rotate(8deg);
+}
+
+/* ---- objects ---- */
+.object {
+  position: absolute;
+  display: block;
+  transition: transform 0.25s ease;
+  text-decoration: none;
+}
+
+.object svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.12));
+}
+
+.object:hover {
+  transform: scale(1.07) rotate(0deg) !important;
+  z-index: 20;
+}
+
+/* page-name label, revealed on hover */
+.object-label {
+  position: absolute;
+  left: 50%;
+  bottom: -26px;
+  transform: translateX(-50%);
+  font-family: "Cutive Mono", "Courier New", monospace;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #2e1308;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.object:hover .object-label,
+.object:focus-visible .object-label {
+  opacity: 1;
+}
+
+.laptop {
+  top: 8%;
+  left: 18%;
+  width: 150px;
+  transform: rotate(6deg);
+}
+
+.plane {
+  bottom: 12%;
+  left: 40%;
+  width: 170px;
+  transform: rotate(4deg);
+}
+
+.walker {
+  top: 30%;
+  right: 12%;
+  width: 100px;
+  transform: rotate(-3deg);
+}
+
+/* subtle idle float on hover targets */
+@media (prefers-reduced-motion: no-preference) {
+  .object svg {
+    animation: floaty 6s ease-in-out infinite;
+  }
+  .object:nth-child(odd) svg { animation-delay: -3s; }
+  .object:hover svg { animation-play-state: paused; }
+
+  @keyframes floaty {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -6px; }
+  }
+}
+
+/* ---- footer ---- */
+.site-footer {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 32px;
+  z-index: 15;
+}
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Cutive Mono", "Courier New", monospace;
+  font-size: 13px;
+  color: #2e1308;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer a:hover {
+  opacity: 1;
+}
+
+.site-footer .arrow {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---- small screens: loosen into a scrollable scatter ---- */
+@media (max-width: 640px) {
+  body { overflow: auto; }
+  .desk { height: auto; min-height: 100vh; padding: 40px 0 60px; }
+  .greeting {
+    position: static;
+    display: block;
+    transform: rotate(-2deg);
+    text-align: center;
+    margin: 10px auto 30px;
+  }
+  .object {
+    position: relative;
+    margin: 18px auto;
+  }
+  .film { transform: rotate(8deg); width: 56px; }
+}
