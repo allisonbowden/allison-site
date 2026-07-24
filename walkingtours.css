@@ -44,6 +44,7 @@ header {
   list-style: none;
   max-width: 480px;
   margin: 0 auto 60px;
+  counter-reset: tour-count;
 }
 
 .tour {
@@ -56,6 +57,12 @@ header {
   text-decoration: none;
   color: #2e1308;
   transition: opacity 0.2s ease;
+  counter-increment: tour-count;
+}
+
+.tour .name::before {
+  content: counter(tour-count) ". ";
+  color: #c65a4f;
 }
 
 .tour:hover {
