@@ -35,6 +35,14 @@ header {
   margin-bottom: 14px;
 }
 
+.fest-logo {
+  width: 190px;
+  max-width: 60vw;
+  display: block;
+  margin: 4px auto 18px;
+  filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.12));
+}
+
 header h1 {
   font-family: "Cutive Mono", monospace;
   font-weight: 700;
