@@ -79,23 +79,23 @@ body {
 }
 
 .laptop {
-  top: 8%;
-  left: 18%;
-  width: 150px;
+  top: 20%;
+  left: 25%;
+  width: 175px;
   transform: rotate(6deg);
 }
 
 .plane {
-  bottom: 12%;
-  left: 40%;
-  width: 170px;
+  bottom: 22%;
+  left: 35%;
+  width: 195px;
   transform: rotate(4deg);
 }
 
 .walker {
-  top: 30%;
-  right: 12%;
-  width: 100px;
+  top: 32%;
+  right: 16%;
+  width: 112px;
   transform: rotate(-3deg);
 }
 
