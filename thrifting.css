@@ -1,0 +1,126 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  padding: 90px 6vw 100px;
+}
+
+.back {
+  position: fixed;
+  top: 24px;
+  left: 28px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #2e1308;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back:hover { text-decoration: underline; }
+
+header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c65a4f;
+  margin-bottom: 14px;
+}
+
+header h1 {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  margin-bottom: 14px;
+}
+
+.intro {
+  font-size: 15px;
+  color: rgba(46, 19, 8, 0.7);
+}
+
+.finds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-decoration: none;
+  color: #2e1308;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+.find:hover {
+  opacity: 0.75;
+}
+
+.find-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1.5px solid rgba(46, 19, 8, 0.5);
+  border-radius: 4px;
+  padding: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.find-photo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.find-photo.placeholder {
+  border-style: dashed;
+  border-color: rgba(46, 19, 8, 0.3);
+  background: #f6f1e9;
+}
+
+.find-name {
+  font-family: "Cutive Mono", monospace;
+  font-size: 15px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.find-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.find-price .og {
+  text-decoration: line-through;
+  color: rgba(46, 19, 8, 0.45);
+}
+
+.find-price .thrifted {
+  color: #c65a4f;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  body { padding: 80px 5vw 60px; }
+  .finds { gap: 28px; }
+  .find { width: 42vw; max-width: 180px; }
+}
