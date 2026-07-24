@@ -79,7 +79,7 @@ body {
 }
 
 .laptop {
-  top: calc(46% - 175px);
+  top: calc(46% - 290px);
   left: calc(50% - 195px);
   width: 225px;
   transform: rotate(6deg);
