@@ -79,23 +79,23 @@ body {
 }
 
 .laptop {
-  top: 20%;
-  left: 25%;
-  width: 175px;
+  top: calc(46% - 175px);
+  left: calc(50% - 195px);
+  width: 225px;
   transform: rotate(6deg);
 }
 
 .plane {
-  bottom: 22%;
-  left: 35%;
-  width: 195px;
+  top: calc(46% + 115px);
+  left: calc(50% - 165px);
+  width: 250px;
   transform: rotate(4deg);
 }
 
 .walker {
-  top: 32%;
-  right: 16%;
-  width: 112px;
+  top: calc(46% - 65px);
+  left: calc(50% + 195px);
+  width: 150px;
   transform: rotate(-3deg);
 }
 
@@ -158,6 +158,10 @@ body {
   }
   .object {
     position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
     margin: 18px auto;
   }
   .film { transform: rotate(8deg); width: 56px; }
