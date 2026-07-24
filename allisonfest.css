@@ -35,14 +35,6 @@ header {
   margin-bottom: 14px;
 }
 
-.fest-logo {
-  width: 190px;
-  max-width: 60vw;
-  display: block;
-  margin: 4px auto 18px;
-  filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.12));
-}
-
 header h1 {
   font-family: "Cutive Mono", monospace;
   font-weight: 700;
@@ -172,6 +164,10 @@ header h1 {
   align-items: center;
   gap: 10px;
   transform: rotate(-2deg);
+}
+
+.dog-card.no-tilt {
+  transform: rotate(0deg);
 }
 
 .dog-card.tilt-r {
