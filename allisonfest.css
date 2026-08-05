@@ -156,6 +156,7 @@ header h1 {
 .moment-photos {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 16px;
   margin-top: 14px;
 }
