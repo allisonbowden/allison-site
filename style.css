@@ -46,7 +46,8 @@ body {
   text-decoration: none;
 }
 
-.object svg {
+.object svg,
+.object img {
   width: 100%;
   height: auto;
   display: block;
@@ -102,11 +103,14 @@ body {
 
 /* subtle idle float on hover targets */
 @media (prefers-reduced-motion: no-preference) {
-  .object svg {
+  .object svg,
+  .object img {
     animation: floaty 6s ease-in-out infinite;
   }
-  .object:nth-child(odd) svg { animation-delay: -3s; }
-  .object:hover svg { animation-play-state: paused; }
+  .object:nth-child(odd) svg,
+  .object:nth-child(odd) img { animation-delay: -3s; }
+  .object:hover svg,
+  .object:hover img { animation-play-state: paused; }
 
   @keyframes floaty {
     0%, 100% { translate: 0 0; }
