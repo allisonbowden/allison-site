@@ -65,7 +65,7 @@ header h1 {
   display: block;
 }
 
-.thumb-sticker {
+.thumb.thumb-sticker {
   height: 210px;
   overflow: visible;
 }
