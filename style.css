@@ -81,7 +81,7 @@ body {
 }
 
 .laptop {
-  top: calc(46% - 290px);
+  top: calc(46% - 255px);
   left: calc(50% - 195px);
   width: 225px;
   transform: rotate(6deg);
@@ -96,7 +96,7 @@ body {
 
 .walker {
   top: calc(46% - 65px);
-  left: calc(50% + 316px);
+  left: calc(50% + 386px);
   width: 150px;
   transform: rotate(-3deg);
 }
